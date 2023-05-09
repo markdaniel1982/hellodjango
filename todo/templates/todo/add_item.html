@@ -11,6 +11,7 @@
 <body>
     <H1>Add a Todo Item: </H1>
     <form method="POST" action="add">
+        {% csrf_token %}
         <div>
             <p>
                 <label for="id_name">Name: </label>
