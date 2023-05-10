@@ -30,11 +30,8 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-if development:
-    ALLOWED_HOSTS = [
-        '8000-markdaniel1982-hellodjan-hkfvxm2heh.us2.codeanyapp.com']
-else:
-    ALLOWED_HOSTS = ['md82-hellodjango.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
