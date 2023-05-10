@@ -34,10 +34,7 @@ if development:
     ALLOWED_HOSTS = [
         '8000-markdaniel1982-hellodjan-hkfvxm2heh.us2.codeanyapp.com']
 else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
-
-
-# Application definition
+    ALLOWED_HOSTS = ['md82-hellodjango.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
