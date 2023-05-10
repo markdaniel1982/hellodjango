@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-dyxlwb0&kymfc%!%b%=nq@l47af^u+5clumd_bkbd3!a$rbb#i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://git.heroku.com/md82-hellodjango.git']
+ALLOWED_HOSTS = ['md82-hellodjango.herokuapp.com']
 
 
 # Application definition
