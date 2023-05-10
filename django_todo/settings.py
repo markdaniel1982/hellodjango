@@ -30,8 +30,11 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['8000-markdaniel1982-hellodjan-hkfvxm2heh.us2.codeanyapp.com',
-                 'md82-hellodjango.herokuapp.com', os.environ.get('HEROKU_HOSTNAME')]
+if development:
+    ALLOWED_HOSTS = [
+        '8000-markdaniel1982-hellodjan-hkfvxm2heh.us2.codeanyapp.com']
+else:
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
